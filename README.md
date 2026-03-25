@@ -1,1 +1,71 @@
 # para-meu-amor-thalitax
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Eu Te Amo ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 20px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: white;
+      color: #ff4b7d;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffe6ec;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Oi, meu amor ❤️</h1>
+  <p id="texto">Clique no botão para descobrir algo...</p>
+  <button onclick="mostrarAmor()">Clique aqui 💖</button>
+</div>
+
+<script>
+  const mensagens = [
+    "Eu amo seu sorriso 😍",
+    "Você é a melhor coisa da minha vida ❤️",
+    "Cada momento com você é especial 💕",
+    "Eu penso em você o tempo todo 🥰",
+    "Quero passar minha vida ao seu lado 💖",
+    "Você me faz muito feliz 😄",
+    "Eu te amo mais do que tudo ❤️"
+  ];
+
+  function mostrarAmor() {
+    const random = Math.floor(Math.random() * mensagens.length);
+    document.getElementById("texto").innerText = mensagens[random];
+  }
+</script>
+
+</body>
+</html>
